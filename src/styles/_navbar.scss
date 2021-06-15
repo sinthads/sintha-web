@@ -1,0 +1,46 @@
+.navbar {
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+
+  .logo {
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+
+    img {
+      height: 4rem;
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+        scale: 1.2;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+
+    .nav-link {
+      text-decoration: none;
+      color: inherit;
+      min-width: 7rem;
+      margin: 0 1rem;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 0.4rem;
+      transition: all 250ms ease-in-out;
+
+      &:hover {
+        text-underline-position: below;
+        text-shadow: 0 0 1rem #f7ea9a;
+        color: #f8d704;
+      }
+    }
+  }
+}

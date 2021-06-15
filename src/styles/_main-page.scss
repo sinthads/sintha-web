@@ -1,0 +1,45 @@
+.main-page {
+  display: flex;
+  justify-content: center;
+
+  .main-card {
+    padding: 2rem 5rem;
+    width: 60%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ava-container {
+      margin: 2rem 0;
+
+      img {
+        background-color: rgba(255, 255, 255, 0.03);
+        object-fit: cover;
+        border-radius: 50%;
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      h3 {
+        span {
+          color: #f8d704;
+        }
+      }
+
+      p {
+        margin: 1rem 0 2rem 0;
+      }
+    }
+  }
+}
