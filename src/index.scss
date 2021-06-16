@@ -2,6 +2,8 @@
 @import "./styles/main-page";
 @import "./styles/footer";
 @import "./styles/projects";
+@import "./styles/contact";
+@import "./styles/animations";
 
 // COLORS
 $mainFontColor: white;
@@ -17,16 +19,17 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: $mainFont;
-  background: url(./assets/background.png) no-repeat center center fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  // background: linear-gradient(
-  //   170deg,
-  //   rgba(2, 0, 36, 1) 10%,
-  //   rgba(9, 121, 116, 1) 71%,
-  //   rgba(0, 162, 130, 1) 100%
-  // );
+  // background: url(./assets/background.png) no-repeat center center fixed;
   // background-repeat: no-repeat;
+  // background-size: cover;
+  background: linear-gradient(
+      170deg,
+      rgba(2, 0, 36, 1) 30%,
+      rgba(9, 121, 116, 1) 98%,
+      rgba(0, 162, 130, 1) 100%
+    ),
+    no-repeat center center fixed;
+  background-attachment: fixed;
 
   color: $mainFontColor;
   font-size: 20px;
@@ -39,6 +42,30 @@ body {
   }
 
   .page-wrapper {
-    height: 100%;
+    padding: 1rem 5rem;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .active {
+    text-shadow: 0 0 1rem #f7ea9a;
+    color: #f8d704;
+  }
+
+  .text-no-decor {
+    text-decoration: none;
+    color: $mainFontColor;
   }
 }

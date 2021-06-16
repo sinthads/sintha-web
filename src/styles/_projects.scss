@@ -1,9 +1,65 @@
 .project-page {
+  text-align: center;
+
+  ul {
+    justify-content: center;
+    animation-name: slide-up-entering;
+    animation-duration: 100ms;
+
+    li {
+      min-width: 7rem;
+      list-style-type: none;
+      margin: 2rem 0;
+      cursor: pointer;
+      text-align: center;
+
+      &:hover {
+        text-shadow: 0 0 1rem #f7ea9a;
+        color: #f8d704;
+      }
+    }
+  }
+
   .project-overview {
-    img {
-      object-fit: cover;
-      width: 15rem;
-      height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation-name: slide-up-entering;
+    animation-duration: 300ms;
+
+    .portLink {
+      padding: 1rem;
+      margin: 1rem;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 0.4rem;
+      transition: background 300ms ease-in-out;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    div {
+      h4 {
+        font-weight: 500;
+      }
+
+      h5 {
+        font-weight: 300;
+        margin-top: 0.4rem;
+        margin-bottom: 1rem;
+      }
+
+      img {
+        object-fit: cover;
+        width: 15rem;
+        height: 10rem;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+          scale: 1.1;
+        }
+      }
     }
   }
 }

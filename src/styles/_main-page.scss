@@ -11,6 +11,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation-name: slide-down-entering;
+    animation-duration: 300ms;
 
     .ava-container {
       margin: 2rem 0;
@@ -25,8 +27,6 @@
     }
 
     .intro {
-      display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;

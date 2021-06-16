@@ -1,0 +1,24 @@
+.contact-page {
+  text-align: center;
+
+  .contacts {
+    justify-content: center;
+    animation-name: slide-up-entering;
+    animation-duration: 300ms;
+
+    .contact-item {
+      padding: 1rem;
+      border-style: solid;
+      border-width: thin;
+      border-color: rgba(255, 255, 255, 0.14);
+      border-radius: 0.4rem;
+      margin: 2rem 1rem;
+      width: 15rem;
+
+      h4 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

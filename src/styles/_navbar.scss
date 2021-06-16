@@ -30,17 +30,20 @@
       text-decoration: none;
       color: inherit;
       min-width: 7rem;
-      margin: 0 1rem;
       padding: 1rem;
       text-align: center;
       border-radius: 0.4rem;
       transition: all 250ms ease-in-out;
 
       &:hover {
-        text-underline-position: below;
         text-shadow: 0 0 1rem #f7ea9a;
         color: #f8d704;
       }
+    }
+
+    .nav-active {
+      text-shadow: 0 0 1rem #f7ea9a;
+      color: #f8d704;
     }
   }
 }

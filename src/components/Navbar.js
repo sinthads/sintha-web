@@ -1,25 +1,38 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import icon from "../assets/logo.svg";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <Link to="/" className="logo">
+      <NavLink to="/" className="logo">
         <img src={icon} alt="" />
-      </Link>
+      </NavLink>
       <div className="nav-menu">
-        <Link to="/" className="nav-link">
+        <NavLink
+          to="/"
+          className="nav-link"
+          activeClassName="nav-active"
+          exact={true}
+        >
           <p>Home</p>
-        </Link>
-        <Link to="/projects" className="nav-link">
+        </NavLink>
+        <NavLink
+          to="/projects"
+          className="nav-link"
+          activeClassName="nav-active"
+        >
           <p>Projects</p>
-        </Link>
-        <Link to="/about" className="nav-link">
+        </NavLink>
+        {/* <NavLink to="/about" className="nav-link" activeClassName="nav-active">
           <p>About</p>
-        </Link>
-        <Link to="/contact" className="nav-link">
+        </NavLink> */}
+        <NavLink
+          to="/contact"
+          className="nav-link"
+          activeClassName="nav-active"
+        >
           <p>Contact</p>
-        </Link>
+        </NavLink>
       </div>
     </nav>
   );

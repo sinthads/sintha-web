@@ -8,7 +8,7 @@ const Projects = () => {
 
   const categoryList = [
     { id: "all", title: "All" },
-    { id: "landing", title: "Landing Pages" },
+    { id: "landing", title: "Landing Page" },
     { id: "web", title: "Web App" },
     { id: "mobile", title: "Mobile App" },
   ];
@@ -37,22 +37,26 @@ const Projects = () => {
   }, [category]);
 
   return (
-    <div className="project-page">
+    <div className="page-wrapper project-page">
       <h2>Projects</h2>
-      <ul>
+      <ul className="flex-row">
         {categoryList.map((item) => (
           <PortfolioList
             key={item.id}
             title={item.title}
             id={item.id}
-            // active={category === item.id}
+            active={category === item.id}
             setCategory={setCategory}
           />
         ))}
       </ul>
-      <div className="project-overview">
+      <div className="flex-row project-overview">
         {data.map((value) => (
-          <Link to={{ pathname: value.path }} target="_blank">
+          <Link
+            to={{ pathname: value.path }}
+            target="_blank"
+            className="text-no-decor portLink"
+          >
             <div key={value.id}>
               <h4>{value.title}</h4>
               <h5>{value.subtitle}</h5>
