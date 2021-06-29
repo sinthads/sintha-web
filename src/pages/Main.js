@@ -15,7 +15,7 @@ const Main = () => {
           <p>
             I'm learning JavaScript. I am building user interfaces components
             using React.js. On the back-end, I use Express.js, a framework for
-            Node.js. For mobile applications, I use React Native.
+            Node.js. I use React-Native for mobile applications.
           </p>
         </div>
       </div>
