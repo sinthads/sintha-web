@@ -22,3 +22,20 @@
     }
   }
 }
+
+@media screen and(max-width: 414px) {
+  .contact-page {
+    .flex-row {
+      flex-direction: column;
+    }
+
+    .contacts {
+      align-items: center;
+      padding: 1rem 0;
+
+      .contact-item {
+        margin: 1rem 0;
+      }
+    }
+  }
+}

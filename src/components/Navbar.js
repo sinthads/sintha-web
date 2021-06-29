@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import icon from "../assets/logo.svg";
 
-const Navbar = () => {
+const Navbar = ({ navOpen, setNavOpen }) => {
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${navOpen ? "open" : ""}`}>
       <NavLink to="/" className="logo">
         <img src={icon} alt="" />
       </NavLink>
@@ -33,6 +33,14 @@ const Navbar = () => {
         >
           <p>Contact</p>
         </NavLink>
+      </div>
+      <div
+        className={`nav-hamburger ${navOpen ? "open" : ""}`}
+        onClick={() => setNavOpen(!navOpen)}
+      >
+        <span className="line1"></span>
+        <span className="line2"></span>
+        <span className="line3"></span>
       </div>
     </nav>
   );

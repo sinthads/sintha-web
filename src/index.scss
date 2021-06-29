@@ -3,7 +3,7 @@
 @import "./styles/footer";
 @import "./styles/projects";
 @import "./styles/contact";
-@import "./styles/animations";
+@import "./styles/menu";
 
 // COLORS
 $mainFontColor: white;
@@ -30,19 +30,18 @@ body {
     ),
     no-repeat center center fixed;
   background-attachment: fixed;
-
   color: $mainFontColor;
   font-size: 20px;
   font-weight: 300;
+  box-sizing: border-box;
 
   * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
   }
 
   .page-wrapper {
-    padding: 1rem 5rem;
+    padding: 1rem;
   }
 
   .flex-column {
@@ -67,5 +66,19 @@ body {
   .text-no-decor {
     text-decoration: none;
     color: $mainFontColor;
+  }
+}
+
+// MOBILE
+
+@media screen and(max-width: 414px) {
+  html,
+  body {
+    max-width: 414px;
+    font-size: 16px;
+
+    .page-wrapper {
+      height: 100%;
+    }
   }
 }

@@ -2,7 +2,7 @@ import dp from "../assets/dp.png";
 
 const Main = () => {
   return (
-    <main className="main-page">
+    <main className="page-wrapper main-page">
       <div className="main-card">
         <div className="ava-container">
           <img src={dp} alt="" />

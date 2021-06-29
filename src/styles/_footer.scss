@@ -1,13 +1,12 @@
 .footer {
   position: absolute;
   bottom: 0;
-  left: 50%;
   height: 3rem;
+  max-width: 1440px;
   font-size: 1rem;
   padding: 1rem;
+  align-items: end;
+}
 
-  p {
-    position: relative;
-    left: -50%;
-  }
+@media screen and(max-width: 414px) {
 }
