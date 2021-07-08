@@ -8,77 +8,81 @@
 // COLORS
 $mainFontColor: white;
 $accentColor: #ff96ad;
+$backgroundColor: linear-gradient(
+  170deg,
+  rgba(2, 0, 36, 1) 24%,
+  rgb(0, 78, 78) 79%,
+  rgb(0, 128, 128) 100%
+);
 
 // TYPOGRAPHY
 $mainFont: "Barlow", sans-serif;
+$letterSpacing: 0.6px;
 
-html,
-body {
-  max-width: 1440px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0;
-  font-family: $mainFont;
-  // background: url(./assets/background.png) no-repeat center center fixed;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  background: linear-gradient(
-      170deg,
-      rgba(2, 0, 36, 1) 30%,
-      rgba(9, 121, 116, 1) 98%,
-      rgba(0, 162, 130, 1) 100%
-    ),
-    no-repeat center center fixed;
-  background-attachment: fixed;
-  color: $mainFontColor;
-  font-size: 20px;
-  font-weight: 300;
-  box-sizing: border-box;
+//LAYOUT
+$desktopHdpi: 1440px;
+$mobile: 414px;
+
+html {
+  min-height: 100%;
 
   * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  .page-wrapper {
-    padding: 1rem;
-  }
-
-  .flex-column {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .flex-row {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  .active {
-    text-shadow: 0 0 1rem #f7ea9a;
-    color: #f8d704;
-  }
-
-  .text-no-decor {
-    text-decoration: none;
+  body {
+    font-family: $mainFont;
+    letter-spacing: $letterSpacing;
     color: $mainFontColor;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 0;
+    background: $backgroundColor;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .page-wrapper {
+      padding: 1rem;
+    }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .active {
+      text-shadow: 0 0 1rem #f7ea9a;
+      color: #f8d704;
+    }
+
+    .text-no-decor {
+      text-decoration: none;
+      color: $mainFontColor;
+    }
   }
 }
 
-// MOBILE
-
 @media screen and(max-width: 414px) {
-  html,
   body {
-    max-width: 414px;
     font-size: 16px;
+  }
+}
 
-    .page-wrapper {
-      height: 100%;
-    }
+@media screen and(min-width: 768px) {
+  body {
+    font-size: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }

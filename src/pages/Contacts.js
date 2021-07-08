@@ -4,7 +4,7 @@ const Contacts = () => {
   return (
     <div className="page-wrapper contact-page">
       <h2>Get in touch</h2>
-      <div className="flex-row contacts">
+      <div className="flex-column contacts">
         <div className="contact-item">
           <h4>
             <FaRegEnvelope />

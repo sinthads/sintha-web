@@ -3,17 +3,19 @@
 
   .contacts {
     justify-content: center;
+    align-items: center;
     animation-name: slide-up-entering;
     animation-duration: 300ms;
+    padding: 1rem 0;
 
     .contact-item {
       padding: 1rem;
+      min-width: 18rem;
       border-style: solid;
       border-width: thin;
       border-color: rgba(255, 255, 255, 0.14);
       border-radius: 0.4rem;
-      margin: 2rem 1rem;
-      width: 15rem;
+      margin: 1rem 0;
 
       h4 {
         font-size: 2rem;
@@ -23,18 +25,14 @@
   }
 }
 
-@media screen and(max-width: 414px) {
+@media screen and (min-width: 768px) {
   .contact-page {
-    .flex-row {
-      flex-direction: column;
-    }
-
     .contacts {
-      align-items: center;
-      padding: 1rem 0;
+      flex-direction: row;
 
       .contact-item {
-        margin: 1rem 0;
+        width: 15rem;
+        margin: 2rem 1rem;
       }
     }
   }

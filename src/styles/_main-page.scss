@@ -1,11 +1,13 @@
+@import "./animations";
+
 .main-page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   .main-card {
-    padding: 2rem 5rem;
-    width: 60%;
-    height: 60%;
+    padding: 1rem 2rem;
     background: rgba(255, 255, 255, 0.04);
     border-radius: 1rem;
     display: flex;
@@ -13,6 +15,8 @@
     align-items: center;
     animation-name: slide-down-entering;
     animation-duration: 300ms;
+    width: 100%;
+    margin-bottom: 3rem;
 
     .ava-container {
       margin: 2rem 0;
@@ -42,14 +46,94 @@
       }
     }
   }
-}
 
-@media screen and(max-width: 414px) {
+  .main-latest {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    hr {
+      width: 3rem;
+      margin: 1rem 0;
+    }
+
+    &__cards {
+      margin: 2rem 0;
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      animation-name: slide-up-entering;
+      animation-duration: 300ms;
+
+      .portLink {
+        padding: 1rem;
+        margin: 1rem;
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 0.4rem;
+        transition: background 300ms ease-in-out;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.1);
+        }
+      }
+
+      div {
+        h4 {
+          font-weight: 500;
+        }
+
+        h5 {
+          font-weight: 300;
+          margin-top: 0.4rem;
+          margin-bottom: 1rem;
+        }
+
+        img {
+          object-fit: cover;
+          width: 15rem;
+          height: 10rem;
+          transition: all 300ms ease-in-out;
+
+          &:hover {
+            scale: 1.1;
+          }
+        }
+      }
+    }
+
+    &__link {
+      color: white;
+    }
+  }
+}
+// IPAD
+@media screen and(min-width: 768px) {
   .main-page {
     .main-card {
-      padding: 1rem;
-      width: auto;
-      height: auto;
+      width: 80%;
+    }
+  }
+}
+
+// MDPI
+@media screen and(min-width: 1280px) {
+  .main-page {
+    .main-card {
+      width: 60%;
+    }
+  }
+}
+
+//HiDPI
+@media screen and(min-width: 1440px) {
+  .main-page {
+    .main-card {
+      width: 50%;
     }
   }
 }

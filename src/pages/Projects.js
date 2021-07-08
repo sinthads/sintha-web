@@ -56,8 +56,9 @@ const Projects = () => {
             to={{ pathname: value.path }}
             target="_blank"
             className="text-no-decor portLink"
+            key={value.id}
           >
-            <div key={value.id}>
+            <div>
               <h4>{value.title}</h4>
               <h5>{value.subtitle}</h5>
               <img src={value.img} alt="" />

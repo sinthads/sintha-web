@@ -1,4 +1,5 @@
 import dp from "../assets/dp.png";
+import { Latest } from "../components";
 
 const Main = () => {
   return (
@@ -18,6 +19,11 @@ const Main = () => {
             Node.js. I use React-Native for mobile applications.
           </p>
         </div>
+      </div>
+      <div className="main-latest">
+        <h3>Latest</h3>
+        <hr />
+        <Latest />
       </div>
     </main>
   );
