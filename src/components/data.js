@@ -23,4 +23,12 @@ export const allPortfolio = [
     img: "https://res.cloudinary.com/sintharou/image/upload/v1624550218/images/Screen_Shot_2021-06-24_at_22.56.01_swh5ep.png",
     path: "https://insure-landing-page-smoky-pi.vercel.app/",
   },
+  {
+    id: 4,
+    categoryId: 2,
+    title: "To-Do List",
+    subtitle: "React + Chakra UI",
+    img: "https://res.cloudinary.com/sintharou/image/upload/v1627286933/images/Screen_Shot_2021-07-26_at_14.59.07_n6iewu.png",
+    path: "https://react-todo-chakraui.vercel.app",
+  },
 ];
