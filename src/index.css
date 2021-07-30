@@ -745,6 +745,36 @@
           animation: swipe-down 300ms;
 }
 
+.not-found {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+}
+
+.not-found-img {
+  height: 10rem;
+  margin: 1rem;
+}
+
+.not-found-text {
+  margin: 1rem;
+  text-align: center;
+}
+
+.not-found-btn {
+  margin: 1rem;
+  color: white;
+}
+
+.not-found-btn:visited {
+  -webkit-text-decoration: white;
+          text-decoration: white;
+}
+
 html {
   min-height: 100%;
 }

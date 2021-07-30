@@ -1,4 +1,4 @@
-import { About, Contacts, Main, Projects } from "./pages";
+import { About, Contacts, Main, NotFound, Projects } from "./pages";
 import { Navbar, Menu } from "./components";
 import { Route, Switch } from "react-router-dom";
 import { useState } from "react";
@@ -14,6 +14,7 @@ function App() {
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contacts} />
         <Route path="/about" component={About} />
+        <Route component={NotFound} />
       </Switch>
       {/* <Footer /> */}
     </div>
