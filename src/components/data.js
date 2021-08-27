@@ -32,3 +32,5 @@ export const allPortfolio = [
     path: "https://react-todo-chakraui.vercel.app",
   },
 ];
+
+export const allBlogs = [];

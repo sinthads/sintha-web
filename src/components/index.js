@@ -1,8 +1,18 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Menu from "./Menu";
-import { allPortfolio } from "./data";
+import { allPortfolio, allBlogs } from "./data";
 import { PortfolioList } from "./PortfolioList";
 import Latest from "./Latest";
+import NotFound from "./NotFound";
 
-export { Navbar, Footer, allPortfolio, PortfolioList, Menu, Latest };
+export {
+  Navbar,
+  Footer,
+  allPortfolio,
+  allBlogs,
+  PortfolioList,
+  Menu,
+  Latest,
+  NotFound,
+};

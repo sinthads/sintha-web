@@ -1,4 +1,4 @@
-import { About, Contacts, Main, NotFound, Projects } from "./pages";
+import { About, Blogs, Contacts, Main, NotFound, Projects } from "./pages";
 import { Navbar, Menu } from "./components";
 import { Route, Switch } from "react-router-dom";
 import { useState } from "react";
@@ -6,14 +6,15 @@ import { useState } from "react";
 function App() {
   const [navOpen, setNavOpen] = useState(false);
   return (
-    <div className="App">
+    <div className='App'>
       <Navbar navOpen={navOpen} setNavOpen={setNavOpen} />
       <Menu navOpen={navOpen} setNavOpen={setNavOpen} />
       <Switch>
-        <Route path="/" exact component={Main} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contacts} />
-        <Route path="/about" component={About} />
+        <Route path='/' exact component={Main} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/contact' component={Contacts} />
+        <Route path='/about' component={About} />
+        <Route path='/blogs' component={Blogs} />
         <Route component={NotFound} />
       </Switch>
       {/* <Footer /> */}
