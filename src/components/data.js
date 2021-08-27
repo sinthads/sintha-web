@@ -20,7 +20,7 @@ export const allPortfolio = [
     categoryId: 1,
     title: "Insure Landing Page",
     subtitle: "HTML + CSS",
-    img: "https://res.cloudinary.com/sintharou/image/upload/v1624550218/images/Screen_Shot_2021-06-24_at_22.56.01_swh5ep.png",
+    img: "https://res.cloudinary.com/sintharou/image/upload/v1630036466/images/Screen_Shot_2021_06_24_at_22.56.01__Small_-PQTkdDgs_zitajx.png",
     path: "https://insure-landing-page-smoky-pi.vercel.app/",
   },
   {

@@ -37,9 +37,9 @@ const Projects = () => {
   }, [category]);
 
   return (
-    <div className="page-wrapper project-page">
+    <div className='page-wrapper project-page'>
       <h2>Projects</h2>
-      <ul className="flex-row">
+      <ul className='flex-row'>
         {categoryList.map((item) => (
           <PortfolioList
             key={item.id}
@@ -50,18 +50,19 @@ const Projects = () => {
           />
         ))}
       </ul>
-      <div className="flex-row project-overview">
+      <div className='flex-row project-overview'>
         {data.map((value) => (
           <Link
             to={{ pathname: value.path }}
-            target="_blank"
-            className="text-no-decor portLink"
+            target='_blank'
+            className='text-no-decor portLink'
             key={value.id}
+            rel='noreferrer'
           >
             <div>
               <h4>{value.title}</h4>
               <h5>{value.subtitle}</h5>
-              <img src={value.img} alt="" />
+              <img src={value.img} alt='' />
             </div>
           </Link>
         ))}
