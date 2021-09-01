@@ -31,6 +31,22 @@ export const allPortfolio = [
     img: "https://res.cloudinary.com/sintharou/image/upload/v1627286933/images/Screen_Shot_2021-07-26_at_14.59.07_n6iewu.png",
     path: "https://react-todo-chakraui.vercel.app",
   },
+  {
+    id: 5,
+    categoryId: 1,
+    title: "[Ongoing] Logos Microsite",
+    subtitle: "NextJS + TS + Chakra UI",
+    img: "/images/logos-microsite.png",
+    path: "https://microsite-logos.vercel.app/",
+  },
+  {
+    id: 6,
+    categoryId: 2,
+    title: "[Ongoing] Logos Festival",
+    subtitle: "NextJS + JS + TailwindCSS",
+    img: "/images/logos-festival.png",
+    path: "https://logos-fest.vercel.app",
+  },
 ];
 
 export const allBlogs = [];
